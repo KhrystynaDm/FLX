@@ -79,13 +79,11 @@ section:not(.blocks) .tm-team-description-container h2{
 	color: gainsboro;
     letter-spacing: 5px;
 }
-
 section:not(.blocks):not(#ideas) .tm-section-description:first-letter {
     font-weight: 300;
     font-size: 2rem;
 	color:#a0d6e2;
 }
-
 .tm-content-box {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
@@ -93,7 +91,6 @@ section:not(.blocks):not(#ideas) .tm-section-description:first-letter {
     display: flex; 
     align-items: center;
 }
-
 .box-bg {
     transition: all ease-out .3s;
 }
@@ -162,7 +159,6 @@ footer.tm-footer p::first-letter {
 	color:#a0d6e2;
 }
 
-
 @media print {
 	section:not(#ideas):not(.blocks) > .tm-content-box:before {
 		content: '';
@@ -191,14 +187,12 @@ footer.tm-footer p::first-letter {
 	.tm-banner {
 		height: 240px;
 	}
-
 	section:nth-child(2),
 	#home,
 	.tm-content-box:first-child,
 	.flex-2-col {
 		display: block;
 	}
-
 	.tm-team-description-container {
 		max-width: 100%;
 		padding: 0 50px;
@@ -206,12 +200,10 @@ footer.tm-footer p::first-letter {
 	.tm-section-title {
 		color: blue!important;
 	}
-
 	.flex-item img {
 		display: block;
 		margin: 0 auto;
 	}
-
 	.tm-footer {
 		margin-top: 25px;
 	}
