@@ -170,7 +170,7 @@ section:not(.blocks):not(#ideas) .tm-section-description:first-letter {
 
 .submit-btn:hover {
     background: #87CEFA;
-    border-color: #87CEFA;
+    border-color: transparent;
     color: #ffffff;
 }
 
