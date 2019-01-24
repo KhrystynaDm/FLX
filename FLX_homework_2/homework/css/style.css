@@ -1,3 +1,7 @@
+#home, section {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
 .tm-banner-text::first-letter {
     font-weight: 300;
     font-size: 40px;
@@ -97,10 +101,6 @@ section:not(.blocks):not(#ideas) .tm-section-description:first-letter {
     font-weight: 300;
     font-size: 2rem;
     color: #a0d6e2;
-}
-
-.tm-content-box {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .tm-content-box.flex-2-col {
