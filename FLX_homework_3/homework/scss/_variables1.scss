@@ -1,3 +1,15 @@
 $primaryColor: #01acac;
-$contentBackground: #fff;
+$whiteColor: #fff;
+$fontsStyle: 15px/24px Roboto, Ubuntu, Cantarell, Helvetica ,sans-serif;
+
 $headerBackground:url('../img/header_background_v1.jpg');
+$headerColor: $whiteColor;
+
+$contentBackground: $whiteColor;
+$contentColor: #010f16;
+$articleColor: #efefef;
+$articleTitleColor: $primaryColor;
+
+
+$labelColor: #0097a7;
+$lineColor: #607d8b;
