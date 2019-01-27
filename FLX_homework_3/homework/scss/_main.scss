@@ -115,7 +115,6 @@ main{
     margin: auto;
     padding: 0 10px;
 }
-
 .btn{
     background: $primaryColor;
     border: none;
@@ -144,10 +143,18 @@ main{
     display: flex;
     .logo {
         width: 230px;
+        @media (min-width: 767px) and (max-width: 1100px){
+            width: 120px;
+        }
+        @media (max-width: 767px) {
+            width: 60%;
+            margin: 0 auto;
+        }
+    }
+    @media (max-width: 767px) {
+        display: block;
     }
 }
-
-
 //header
 header {
     background: $headerBackground no-repeat bottom center;
@@ -159,7 +166,6 @@ header {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -173,20 +179,31 @@ header {
             text-align: center;
         }
     }
-
 }
 nav{
-    a{
+    @media (max-width: 767px) {
+        text-align: center;
+    }
+    a {
         text-transform: uppercase;
         padding: 16px 106px;
         color: $headerColor;
         display: inline-flex;
+
         & + a {
             border-left: 2px solid $lineColor;
         }
+
+        @media (min-width: 767px) and (max-width: 1100px) {
+            padding: 15px 70px;
+        }
+        @media (max-width: 767px) {
+            padding: 5px 10px;
+            color: #ff5722;
+            display: inline-block;
+        }
     }
 }
-
 
 ///toolbar
 .toolbar {
@@ -208,7 +225,6 @@ nav{
         article {
             background: $articleColor;
             padding: 10px;
-
             @include displayFlex();
             -webkit-box-pack: justify;
             -webkit-justify-content: space-between;
@@ -220,7 +236,6 @@ nav{
                 -ms-flex: 0 0 30.333332%;
                 flex: 0 0 30.333332%;
                 max-width: 30.333332%;
-
                 max-height: 282px;
                 @media (max-width: 767px){
                     -webkit-box-flex: 0;
@@ -258,12 +273,11 @@ nav{
     &-description {
         padding: 5px 0;
         font-size: 12px;
-        color: #e90303;
+        color: $articleDescriptionColor;
         border-bottom: 1px solid $lineColor;
         margin-bottom: 5px;
     }   
 }
-
 .about {
     > div {
         padding: 0 10px;
@@ -276,7 +290,6 @@ nav{
 .contact-form, .about{
     padding-top: 65px;
 }
-
 .contact-form{
     h4{
         text-align: right;
@@ -298,10 +311,8 @@ nav{
         margin-left: auto;
         margin: 15px 0 0 auto;
         display: block;
-
     }
 }
-
 .form-group {
     width: 100%;
     margin-bottom: 25px;
@@ -317,14 +328,12 @@ nav{
 		border-radius: 0;
 		background-color: transparent;
 		border: solid 1px $lineColor;
-		
 		outline: none;
 		font-size: 14px;
 		font-weight: normal;
 		line-height: normal;
 		color: #a09e9e;
 	}
-
 	input:disabled {
 		cursor: not-allowed;
 	}
