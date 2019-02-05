@@ -1,8 +1,6 @@
 let a = Number(prompt("Please enter value a")),
     b = Number(prompt("Please enter value b")),
     c = Number(prompt("Please enter value c")), resultX, resultX1, resultX2;
-
-
 if (!isNaN(a) && !isNaN(b) && !isNaN(c)) {
     const discriminant = Math.pow(b, 2) - (4 * a * c);
     const sqrDiscriminant = Math.sqrt(discriminant);
@@ -19,5 +17,3 @@ if (!isNaN(a) && !isNaN(b) && !isNaN(c)) {
 } else {
     alert('Invalid input data');
 }
-
-
