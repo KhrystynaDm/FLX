@@ -10,9 +10,7 @@ if ((price <= 9999999) && (price > 0) && (discount <= 99) && (discount > 0)) {
         'Discount:' + parseFloat(discount.toFixed()) + '%' + '\n' +
         'Price with discount:' + parseFloat(afterDiscount.toFixed(2)) + '\n' +
         'Saved:' + parseFloat(saved.toFixed(2))
-    );
-
-}
-else {
+    )
+} else {
     alert('Invalid input data');
 }
