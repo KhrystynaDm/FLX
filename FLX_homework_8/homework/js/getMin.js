@@ -1,4 +1,4 @@
-function getMin (...arr){
+function getMin(...arr) {
     let arg = arr[0];
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] < arg) {
@@ -7,4 +7,5 @@ function getMin (...arr){
     }
     return arg;
 }
-getMin(3, 0, -2, -7);
+
+getMin(3, 0, -3);

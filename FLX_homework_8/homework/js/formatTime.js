@@ -14,5 +14,3 @@ function formatTime(time) {
 }
 
 formatTime(122);
-formatTime(3601); 
-formatTime(59);
