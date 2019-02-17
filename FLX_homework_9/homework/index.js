@@ -9,27 +9,29 @@ function findTypes(...arr) {
 findTypes(null, 5, "hello");
 
 function executeforEach(array, callback) {
-    for (var i = 0; i < array.length; i++) {
+    for (let i = 0; i < array.length; i++) {
         callback(array[i]);
     }
 }
 
+executeforEach([1, 2, 5], function (el) {
+    console.log(el)
+});
+
 function mapArray(array, callback) {
-    var mapArray = [];
+    let mapArray = [];
     executeforEach(array, function (el) {
         mapArray.push(callback(el));
     });
     return mapArray;
 }
 
-function mapFunction(el) {
-    return el + 3;
-}
-
-console.log(mapArray([2, 5, 8], mapFunction));
+console.log(mapArray([2, 5, 8], function (el) {
+    return el + 3
+}));
 
 function filterArray(array, callback) {
-    var filterArray = [];
+    let filterArray = [];
     executeforEach(array, function (el) {
         if (callback(el)) {
             filterArray.push(el);
@@ -39,11 +41,9 @@ function filterArray(array, callback) {
     return filterArray;
 }
 
-function predicateFunction(el) {
-    return el > 3;
-}
-
-console.log(filterArray([1, 34, 6, 9, -10, 26, -9], predicateFunction));
+console.log(filterArray([1, 34, 6, 9, -10, 26, -9], function (el) {
+    return el > 3
+}));
 
 let data = [{
     "_id": "5b5e3168c6bf40f2c1235cd6",
